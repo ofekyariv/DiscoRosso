@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E2D7"
+    tools:context=".FinalListActivity">
+    <TextView
+        android:id="@+id/discorosso_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCO ROSSO"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#8A8889"
+        android:layout_centerHorizontal="true"/>
+<ListView
+    android:id="@+id/listViewDR"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_below="@id/discorosso_tv"
+    android:layout_above="@id/txtbudgettrack"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="40dp"
+    android:background="#FDD7E4"/>
+<TextView
+    android:id="@+id/txtbudgettrack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="you are in your budget!"
+    android:layout_centerHorizontal="true"
+    android:textSize="30sp"
+    android:textColor="#000000"
+    android:layout_marginBottom="20sp"
+    android:layout_alignParentBottom="true"
+    />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E2D7"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:id="@+id/tvdisco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCO ROSSO"
+        android:textSize="30sp"
+        android:textColor="#F8A4C0"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toBottomOf="@+id/tvdisco"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnbag1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bag1"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        app:layout_constraintRight_toLeftOf="@+id/btnbag2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <RatingBar
+        android:id="@+id/starBag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/btnbag1"
+        app:layout_constraintRight_toRightOf="@id/btnbag1"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag1"/>
+
+    <TextView
+        android:id="@+id/bag1Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50$"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/starBag1"
+        app:layout_constraintRight_toRightOf="@id/btnbag1"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag1"/>
+
+    <Button
+        android:id="@+id/btnbag2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bag2"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        app:layout_constraintLeft_toRightOf="@+id/btnbag1"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/starBag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/btnbag2"
+        app:layout_constraintRight_toRightOf="@id/btnbag2"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag2"/>
+
+    <TextView
+        android:id="@+id/bag2Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150$"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/starBag2"
+        app:layout_constraintRight_toRightOf="@id/btnbag2"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag2"/>
+
+    <Button
+        android:id="@+id/btnbag3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bag3"
+        app:layout_constraintTop_toBottomOf="@+id/starBag1"
+        app:layout_constraintRight_toLeftOf="@+id/btnbag4"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/starBag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/btnbag3"
+        app:layout_constraintRight_toRightOf="@id/btnbag3"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag3"/>
+
+    <TextView
+        android:id="@+id/bag3Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300$"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/starBag3"
+        app:layout_constraintRight_toRightOf="@id/btnbag3"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag3"/>
+
+
+
+    <Button
+        android:id="@+id/btnbag4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bag4"
+        app:layout_constraintTop_toBottomOf="@+id/starBag2"
+        app:layout_constraintLeft_toRightOf="@+id/btnbag3"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/starBag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/btnbag4"
+        app:layout_constraintRight_toRightOf="@id/btnbag4"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag4"/>
+
+    <TextView
+        android:id="@+id/bag4Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 230$"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/starBag4"
+        app:layout_constraintRight_toRightOf="@id/btnbag4"
+        app:layout_constraintLeft_toLeftOf="@id/btnbag4"/>
+
+
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvdisco"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        />
+    <Button
+        android:id="@+id/btnselect"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="select"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/bag3Price"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

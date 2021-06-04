@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/imgBag"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bag4" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/imgBag"
+        android:text="name"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/imgBag"
+        android:layout_below="@id/tvName"
+        android:text="rating"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/imgBag"
+        android:layout_below="@id/tvRating"
+        android:text="Price"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
